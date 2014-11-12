@@ -41,7 +41,8 @@ end
 desc "Deploy to beanstalk"
 task :deploy do
   puts "Zipping up application..."
-  `zip app.zip * -x Rakefile LICENSE deployment.template README.md .gitignore .travis.yml`
+  #`zip app.zip * -x Rakefile LICENSE deployment.template README.md .gitignore .travis.yml`
+  `zip -r app.zip .`
   abort "Failed to zip archive" unless $?.success?
 
   abort "Missing environment variable 'S3_BUCKET_NAME'" unless ENV["S3_BUCKET_NAME"]
