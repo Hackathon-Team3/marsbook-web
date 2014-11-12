@@ -22,6 +22,8 @@ Gem::Specification.new do |spec|
   #spec.add_dependency "pg", "~> 0.17.1"
   spec.add_dependency "mysql", "~> 2.9.1"
   spec.add_dependency "activerecord", "~> 4.1.7"
+  spec.add_dependency "json_pure", "~> 1.8.1"
+  spec.add_dependency "aws-sdk", "~> 1.58.0"
 
   spec.add_development_dependency "bundler", "~> 1.7"
   spec.add_development_dependency "rake", "~> 10.0"
